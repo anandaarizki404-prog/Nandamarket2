@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANDA MARKET - Store Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#81D4FA',    // Biru Muda Soft
+                        secondary: '#E0F7FA',  // Background Putih Biru
+                        dark: '#01579B',      // Biru Tua
+                        accent: '#00BFFF',    // Biru Cerah
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .glass-hd {
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.7);
+            }
+            .glow-effect {
+                box-shadow: 0 8px 32px rgba(0, 191, 255, 0.2), 0 4px 12px rgba(0, 191, 255, 0.1);
+            }
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: linear-gradient(135deg, #4FC3F7, #00BFFF);
+            }
+        }
+    </style>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #E0F7FF 0%, #FFFFFF 50%, #F0FBFF 100%);
+            scroll-behavior: smooth;
+        }
+        .animate-box {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body class="font-poppins text-gray-800">
+
+<div class="container mx-auto px-4 py-10 max-w-md">
+    
+    <!-- HEADER -->
+    <div class="text-center mb-10 animate-box delay-1" id="home">
+        <h1 class="text-5xl font-black text-gradient mb-2">
+            <i class="fas fa-store mr-2"></i>NANDA MARKET
+        </h1>
+        <p class="text-gray-500 text-lg">Sewa Bot, Panel & Script Termurah ✨</p>
+        <div class="w-32 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto mt-4 rounded-full glow-effect"></div>
+    </div>
+
+    <!-- ============================================== -->
+    <!--               MENU 1: SEWA BOT (5 MENU)      -->
+    <!-- ============================================== -->
+    <div class="mb-12 animate-box delay-2">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-robot mr-2"></i>SEWA BOT HIYORZUMI AI
+        </h2>
+        
+        <div class="space-y-4">
+            <div class="glass-hd rounded-2xl p-5 glow-effect">
+                <div class="flex justify-between items-center">
+                    <div><h3 class="font-bold">1 MINGGU</h3></div>
+                    <span class="text-3xl font-black text-primary">10K</span>
+                    <a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a>
+                </div>
+            </div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect">
+                <div class="flex justify-between items-center">
+                    <div><h3 class="font-bold">1 BULAN</h3></div>
+                    <span class="text-3xl font-black text-primary">12K</span>
+                    <a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a>
+                </div>
+            </div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect">
+                <div class="flex justify-between items-center">
+                    <div><h3 class="font-bold">6 BULAN</h3></div>
+                    <span class="text-3xl font-black text-primary">15K</span>
+                    <a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a>
+                </div>
+            </div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect">
+                <div class="flex justify-between items-center">
+                    <div><h3 class="font-bold">12 BULAN</h3></div>
+                    <span class="text-3xl font-black text-primary">25K</span>
+                    <a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a>
+                </div>
+            </div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect border-2 border-accent">
+                <div class="flex justify-between items-center">
+                    <div><h3 class="font-bold">PERMANEN</h3></div>
+                    <span class="text-3xl font-black text-accent">40K</span>
+                    <a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!--               MENU 2: PANEL BOT (8 MENU)     -->
+    <!-- ============================================== -->
+    <div class="mb-12 animate-box delay-3">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-server mr-2"></i>PANEL BOT
+        </h2>
+        
+        <div class="space-y-4">
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">2GB RAM</h3></div><span class="text-xl font-bold text-primary">3K</span><a href="#payment" class="bg-accent text-white px-3 py-1 rounded-full text-xs">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">4GB RAM</h3></div><span class="text-xl font-bold text-primary">5K</span><a href="#payment" class="bg-accent text-white px-3 py-1 rounded-full text-xs">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">5GB RAM</h3></div><span class="text-xl font-bold text-primary">7K</span><a href="#payment" class="bg-accent text-white px-3 py-1 rounded-full text-xs">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">7GB RAM</h3></div><span class="text-xl font-bold text-primary">10K</span><a href="#payment" class="bg-accent text-white px-3 py-1 rounded-full text-xs">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">8GB RAM</h3></div><span class="text-xl font-bold text-primary">12K</span><a href="#payment" class="bg-accent text-white px-3 py-1 rounded-full text-xs">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">10GB RAM</h3></div><span class="text-xl font-bold text-primary">15K</span><a href="#payment" class="bg-accent text-white px-3 py-1 rounded-full text-xs">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">12GB RAM </h3></div><span class="text-xl font-bold text-primary">17K</span><a href="#payment" class="bg-accent text-white px-3 py-1 rounded-full text-xs">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect border-2 border-accent"><div class="flex justify-between items-center"><div><h3 class="font-bold">UNlIMITED 
+            RAM</h3></div><span class="text-xl font-bold text-accent">20K</span><a href="#payment" class="bg-accent text-white px-3 py-1 rounded-full text-xs">ORDER</a></div></div>
+        </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!--               MENU 3: SCRIPT HIYORZUMI       -->
+    <!-- ============================================== -->
+    <div class="mb-12 animate-box delay-4">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-code-branch mr-2"></i>SCRIPT HIYORZUMI
+        </h2>
+        <div class="glass-hd rounded-2xl p-8 glow-effect text-center">
+            <i class="fas fa-file-code text-7xl text-primary mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">SCRIPT HIYORZUMI</h3>
+            <p class="text-sm text-gray-500 mb-6">Full Fitur | Priview Bagus | Update Gratis</p>
+            <div class="text-5xl font-black text-accent glow-effect mb-6">80K</div>
+            <a href="#payment" class="inline-block bg-accent text-white font-bold px-8 py-3 rounded-full">BELI SEKARANG</a>
+        </div>
+    </div>
+
+    <!-- ============================================== -->
+    <!--               MENU 4: SCRIPT MIGUMI          -->
+    <!-- ============================================== -->
+    <div class="mb-12 animate-box">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-magic mr-2"></i>SCRIPT MIGUMI
+        </h2>
+        <div class="glass-hd rounded-2xl p-8 glow-effect text-center">
+            <i class="fas fa-code text-7xl text-primary mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">SCRIPT MIGUMI MD</h3>
+            <p class="text-sm text-gray-500 mb-6">Speed Ringan | Tampilan Elegan | Bisa Edit</p>
+            <div class="text-5xl font-black text-accent glow-effect mb-6">70K</div>
+            <a href="#payment" class="inline-block bg-accent text-white font-bold px-8 py-3 rounded-full">BELI SEKARANG</a>
+        </div>
+    </div>
+
+<!-- ============================================== -->
+    <!--               MENU 5: JADI BOT              -->
+    <!-- ============================================== -->
+    <div class="mb-12 animate-box">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-user-robot mr-2"></i>JADI BOT
+        </h2>
+        <div class="glass-hd rounded-2xl p-8 glow-effect text-center">
+            <i class="fas fa-user-check text-7xl text-primary mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">JASA JADI BOT</h3>
+            <p class="text-sm text-gray-500 mb-6">Nomor Kamu Jadi Bot | Auto Respon | Full Fitur</p>
+            <div class="text-5xl font-black text-accent glow-effect mb-6">25K</div>
+            <a href="#payment" class="inline-block bg-accent text-white font-bold px-8 py-3 rounded-full">ORDER SEKARANG</a>
+        </div>
+    </div>
+
+<!-- ============================================== -->
+    <!--               MENU 6: PREMIUM (5 MENU)       -->
+    <!-- ============================================== -->
+    <div class="mb-12 animate-box delay-6">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-gem mr-2"></i>PAKET PREMIUM
+        </h2>
+        <div class="space-y-4">
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">PREMIUM 1 HARI</h3></div><span class="text-3xl font-black text-primary">2K</span><a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">PREMIUM 7 HARI</h3></div><span class="text-3xl font-black text-primary">5K</span><a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">PREMIUM 15 HARI</h3></div><span class="text-3xl font-black text-primary">8K</span><a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect"><div class="flex justify-between items-center"><div><h3 class="font-bold">PREMIUM 25 HARI</h3></div><span class="text-3xl font-black text-primary">12K</span><a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a></div></div>
+            <div class="glass-hd rounded-2xl p-5 glow-effect border-2 border-accent"><div class="flex justify-between items-center"><div><h3 class="font-bold">PREMIUM 30 HARI</h3></div><span class="text-3xl font-black text-accent">15K</span><a href="#payment" class="bg-accent text-white px-4 py-2 rounded-full text-sm">ORDER</a></div></div>
+        </div>
+    </div>
+
+
+    <!-- ============================================== -->
+    <!--               MENU 5: PAYMENT                -->
+    <!-- ============================================== -->
+    <div class="mb-12 animate-box" id="payment">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-credit-card mr-2"></i>METODE PEMBAYARAN
+        </h2>
+        
+        <!-- QRIS -->
+        <div class="glass-hd rounded-2xl p-7 mb-6 glow-effect text-center">
+            <h3 class="font-bold text-xl mb-4"><i class="fas fa-qrcode mr-2 text-accent"></i>QRIS SCAN</h3>
+            <div class="bg-secondary rounded-xl p-5 inline-block">
+                <!-- GANTI LINK INI DENGAN GAMBAR QRIS KAMU -->
+                <img src="https://files.catbox.moe/oaw537.jpg" alt="QRIS" class="rounded-lg shadow-lg w-60">
+            </div>
+            <p class="text-xs text-accent font-bold mt-2"<NANDA MARKET</p>
+        </div>
+
+        <!-- DANA -->
+        <div class="glass-hd rounded-2xl p-6 mb-4 glow-effect">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold text-blue-500"><i class="fab fa-cc-apple-pay mr-2"></i>DANA</h3>
+                    <p class="font-mono text-gray-800 font-bold text-lg" id="dana">0838-3867-5484</p>
+                </div>
+                <button onclick="copyText('dana')" class="bg-accent text-white px-4 py-2 rounded-full text-sm">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+
+        <!-- GOPAY -->
+        <div class="glass-hd rounded-2xl p-6 glow-effect">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold text-green-500"><i class="fas fa-money-bill-wave mr-2"></i>GOPAY</h3>
+                    <p class="font-mono text-gray-800 font-bold text-lg" id="gopay">0838-3867-5484</p>
+                </div>
+                <button onclick="copyText('gopay')" class="bg-accent text-white px-4 py-2 rounded-full text-sm">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+    
+<!--  ============================================== -->
+    <!--               MENU 7: KONTAK                -->
+    <!-- ============================================== -->
+<div class="mb-12 animate-box">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-list-ol mr-2"></i>HUBUNGI ADMIN
+        </h2>
+        <div class="glass-hd rounded-2xl p-7 glow-effect">
+            <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm">
+            
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/6283130010117" target="_blank" class="block bg-white rounded-2xl p-5 gojo-shadow border-glow hover:bg-green-50 transition">
+                <div class="flex items-center">
+                    <i class="fab fa-whatsapp text-4xl text-green-500 mr-4"></i>
+                    <div class="flex-1">
+                        <p class="font-bold text-gray-700">WHATSAPP</p>
+                        <p class="text-sm text-gray-500">+62 831-3001-0117</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+            </a>
+
+            <!-- TIKTOK -->
+            <a href="https://tiktok.com" target="_blank" class="block bg-white rounded-2xl p-5 gojo-shadow border-glow hover:bg-gray-50 transition">
+                <div class="flex items-center">
+                    <i class="fab fa-tiktok text-4xl text-gray-700 mr-4"></i>
+                    <div class="flex-1">
+                        <p class="font-bold text-gray-700">TIKTOK</p>
+                        <p class="text-sm text-gray-500">@nandakiezx</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+            </a>
+
+            <!-- TELEGRAM -->
+            <a href="https://telegram.org" target="_blank" class="block bg-white rounded-2xl p-5 gojo-shadow border-glow hover:bg-blue-50 transition">
+                <div class="flex items-center">
+                    <i class="fab fa-telegram text-4xl text-blue-500 mr-4"></i>
+                    <div class="flex-1">
+                        <p class="font-bold text-gray-700">TELEGRAM</p>
+                        <p class="text-sm text-gray-500">@Nanoffc</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    
+        <!-- ============================================== -->
+    <!--               MENU 6: CARA ORDER            -->
+    <!-- ============================================== -->
+    <div class="mb-12 animate-box">
+        <h2 class="text-2xl font-bold text-dark mb-6 pl-3 border-l-4 border-accent">
+            <i class="fas fa-list-ol mr-2"></i>CARA ORDER
+        </h2>
+        <div class="glass-hd rounded-2xl p-7 glow-effect">
+            <ol class="list-decimal list-inside space-y-3 text-gray-700 text-sm">
+                <li>Pilih produk yang ingin dibeli</li>
+                <li>Transfer sesuai harga ke nomor/QR di atas</li>
+                <li>Screenshot bukti pembayaran</li>
+                <li>Kirim bukti ke kontak
+ </i>
+                </div>
+            </a>
+
+        </div>
+    </div>
+                
+
+    <!-- BACK BUTTON -->
+    <div class="text-center">
+        <a href="index.html" class="inline-block bg-primary text-white font-bold px-8 py-3 rounded-full hover:bg-dark transition gojo-shadow">
+            <i class="fas fa-arrow-left mr-2"></i> Kembali ke Toko
+        </a>
+    </div>
+
+</div>
+
+<footer class="text-center py-6 text-sm text-gray-400">
+    &copy; 2025 NANDA MARKET - Unlimited Power
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+    function copyText(id) {
+        const text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Berhasil disalin!');
+        });
+    }
+</script>
+
+</body>
+</html>
